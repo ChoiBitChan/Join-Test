@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -8,6 +9,22 @@
 </head>
 <body>
 	È¸¿øÅ»Åð
+	<br/>
+	
+	<%!
+		String id, pw;
+	%>
+	
+	<%
+		id = (String)session.getAttribute("id");
+		pw = (String)session.getAttribute("pw");
+	
+		
+		out.println(id + "´Ô Å»Åð ÇÏ½Ã°Ú½À´Ï±î?");
+	%>
+	<br/>
+	<input type="button" value="¿¹" onclick="location.href='test_leaveCheck.jsp'">
+	<input type="button" value="¾Æ´Ï¿À" onclick="location.href='test_loginSuccess.jsp'">
 
 </body>
 </html>

@@ -7,10 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	수정완료
-	<br/>
-	<input type="button" value="로그인" onclick="location.href='test_login.html'">
-	<input type="button" value="회원가입" onclick="location.href='test_join.html'">
+	탈퇴완료
 
 </body>
 </html>

@@ -17,13 +17,8 @@
 	<%
 		id = (String)session.getAttribute("id");
 	
-		Enumeration enumeration = session.getAttributeNames();
-		while (enumeration.hasMoreElements()) {
-			String sName = enumeration.nextElement().toString();
-			String sValue = (String)session.getAttribute(sName);
-			out.println(sValue + " ´Ô ¾È³çÇÏ¼¼¿ä.");
-			
-		}
+		
+		out.println(id + "´Ô ¾È³çÇÏ¼¼¿ä.");
 	%>
 	<br/>
 	<input type="button" value="Á¤º¸¼öÁ¤" onclick="location.href='test_modify.jsp'">

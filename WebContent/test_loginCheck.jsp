@@ -49,6 +49,7 @@
 				String pw = resultSet.getString("pw");
 				
 				session.setAttribute("id", id);
+				session.setAttribute("pw", pw);
 				
 				response.sendRedirect("test_loginSuccess.jsp");
 				System.out.println("in");
